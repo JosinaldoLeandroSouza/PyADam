@@ -40,7 +40,7 @@ RsgGroupBox(name='GroupBox_7', p='TabItem_2', text='Physical Data of the Foundat
 RsgTextField(p='GroupBox_7', fieldType='String', ncols=33, labelText='Name of Foundation Material', keyword='material2', default='Rocha Granitica')
 RsgTextField(p='GroupBox_7', fieldType='Float', ncols=15, labelText='Rock Material Density (kN/m3)', keyword='Rho_rocha', default='2700')
 RsgTextField(p='GroupBox_7', fieldType='Float', ncols=20, labelText='Modulus of Elasticity of the Foundation Material (kN/m2)', keyword='Es_rocha', default='40000000000')
-RsgTextField(p='GroupBox_7', fieldType='Float', ncols=12, labelText='Poissons Tation', keyword='nu_rocha', default='0.2')
+RsgTextField(p='GroupBox_7', fieldType='Float', ncols=12, labelText='Poissons Ratio', keyword='nu_rocha', default='0.2')
 RsgTextField(p='GroupBox_7', fieldType='Float', ncols=12, labelText='Foundation Material Permeability (m/s)', keyword='Ks_rocha', default='0.000000000001')
 RsgTextField(p='GroupBox_7', fieldType='Float', ncols=5, labelText='Void Index', keyword='iv_rocha', default='0.02')
 
@@ -50,7 +50,7 @@ RsgGroupBox(name='GroupBox_12', p='TabItem_3', text='Global Coordinate System', 
 RsgIcon(p='GroupBox_12', fileName=r'galeria.png')
 RsgLabel(p='GroupBox_12', text='Indicate the location of Point P0 in the global coordinate system, for numerical analysis.', useBoldFont=False)
 RsgTable(p='GroupBox_12', numRows=1, columnData=[('X', 'Float', 40), ('Y', 'Float', 40)], showRowNumbers=True, showGrids=True, keyword='Origem', popupFlags='')
-RsgGroupBox(name='GroupBox_8', p='TabItem_3', text='Choosing the type of Solver', layout='LAYOUT_FILL_X|LAYOUT_FILL_Y')
+RsgGroupBox(name='GroupBox_8', p='TabItem_3', text='Choosing the Solver type', layout='LAYOUT_FILL_X|LAYOUT_FILL_Y')
 RsgLabel(p='GroupBox_8', text='The type of Solver will imply the type of results to be obtained.', useBoldFont=True)
 RsgList(name='List_1', p='GroupBox_8', nvis=2, keyword='Solucionador', default='', layout='LAYOUT_FILL_X')
 RsgListItem(p='List_1', text='Structural Mechanics - Uncoupled (UN)')
@@ -58,7 +58,7 @@ RsgListItem(p='List_1', text='Hydromechanics - Coupled (CO)')
 
 # Load Tab Interface
 RsgTabItem(name='TabItem_4', p='TabBook_1', text='Load')
-RsgGroupBox(name='GroupBox_10', p='TabItem_4', text='Loading due to Water Accumulation', layout='LAYOUT_FILL_X|LAYOUT_FILL_Y')
+RsgGroupBox(name='GroupBox_10', p='TabItem_4', text='Loading due to Reservoir', layout='LAYOUT_FILL_X|LAYOUT_FILL_Y')
 RsgSlider(p='GroupBox_10', text='Upstream Water Height (%)', minLabelText='Minimum level', maxLabelText='Maximum level', valueType=FLOAT, minValue=0, maxValue=100, decimalPlaces=2, showValue=True, width=400, keyword='NA_montante', default=100)
 RsgIcon(p='GroupBox_10', fileName=r'dam_load.png')
 RsgTextField(p='GroupBox_10', fieldType='Float', ncols=12, labelText='Downstream Water Height (m)', keyword='NA_jusante', default='0.0')
